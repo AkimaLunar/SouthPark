@@ -1,4 +1,4 @@
-[
+var MARKERS = [
 	{
 		"title": "kydance Skydiving",
 		"lat": 38.584945,
