@@ -15,7 +15,7 @@ footer {
 		@include span-columns(6);
 		a {
 			font-family: $header-font-family;
-			@include heading(em(22), transparentize($accent2-color, 0.4), 6px);
+			@include heading(em(22), transparentize($accent2-color, 0.6), 6px);
 			&:hover {
 				color: $accent2-color;
 			}
