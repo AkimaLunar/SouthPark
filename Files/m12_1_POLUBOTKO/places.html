@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps JSON Marker Example</title>
+    <!-- the css styles defined force the map-canvas div to have some dimensions! -->
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { 
+      height: 100%;
+      width:100%;
+      }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(37.786421, -122.399369),
+          zoom: 6
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+        var marker_bounds = new google.maps.LatLngBounds();
+        var infowindow = new google.maps.InfoWindow();
+        for (var counter = 0; counter < json.length; counter=counter+1 )
+        {
+        	var data = json[counter];
+        	var marker_position = new google.maps.LatLng( data.place.latitude, data.place.longitude );
+        	var marker = new google.maps.Marker({position: marker_position,map: map,title: data.place.title});
+        	marker_bounds.extend(marker_position);
+        	(function(marker,data) {
+        		google.maps.event.addListener(marker,"click",
+        			function() {
+        				infowindow.setContent(data.place.description);
+        				infowindow.open(map,marker);
+        			}
+        		);
+        	}
+        	)(marker, data);
+        	
+        	
+        }
+        map.fitBounds(marker_bounds);
+        
+      }
+    var json;
+    function loadjson() {
+        $.getJSON( "sql-json.php",
+            function(jsondata) {
+                alert("Jason's here!");
+                json=jsondata.places;
+                initialize();
+            }
+         );
+    }
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+    <script>
+        $(function(){ 
+            loadjson();
+        });
+    </script>
+  </body>
+</html>
