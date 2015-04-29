@@ -26,15 +26,15 @@ $base-z-index: 0;
 // Colors
 $white: transparentize(white, 0.2);
 $blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
+$dark-gray: #494e51;
+$medium-gray: #abc0cb;
+$light-gray: #b9cad3;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
-$accent1-color: #395e71;
-$accent2-color: #360033;
+$accent1-color: #395e71; //blue
+$accent2-color: #360033; //purple
 $accent1-light-color: #abc0cb;
 $accent2-light-color: desaturate(lighten($accent2-color, 30%), 40%);
 $text-color: #494e51;

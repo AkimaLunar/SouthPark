@@ -4,11 +4,12 @@ footer {
 	$gradient-color-bottom:transparentize($accent1-color, .8);
 
 	height: 60px;
+	overlay: hidden;
 	@include linear-gradient($vertical-angle, $gradient-color-top, $gradient-color-bottom);
 
 	.footer-inner {
 		@include outer-container;
-		padding: 14px 0;
+		padding-top: 14px;
 	}
 
 	.footer-first {

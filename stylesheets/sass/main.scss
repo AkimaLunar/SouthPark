@@ -3,3 +3,9 @@
 @import "neat/neat";
 @import "base/base";
 @import "modules/modules";
+
+// GLOBAL
+
+html, body {
+	height: 100%;
+}
