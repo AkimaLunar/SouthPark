@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>South Park</title>
     <meta name="description" content="header for South Park">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,8 +32,6 @@
     </div>
     <div class="hero-color-overlay">&nbsp;</div>
     <div class="hero-video-background" data-vide-bg="assets/south-park" data-vide-options="loop: true, muted: true, position: 0% 0%, posterType: jpg">&nbsp;</div>
-</div>
-
 </div>
 <!-- HERO: End -->
 
