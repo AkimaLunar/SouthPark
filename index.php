@@ -25,8 +25,8 @@
     <div class="hero-copy">
         <h1>South Park</h1>
         <ul>
-            <li><a href="">Places</a></li>
-            <li><a href="">Residents</a></li>
+            <li><a href="places.php">Places</a></li>
+            <li><a href="residents.php">Residents</a></li>
             <li><a href="">History</a></li>
         </ul>
     </div>

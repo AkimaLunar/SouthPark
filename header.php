@@ -25,9 +25,9 @@
             </div>
             <div class="header-second">
                 <ul>
-                    <li><a href="/places.html">Places</a></li>
-                    <li><a href="/residents.html">Residents</a></li>
-                    <li><a href="/history.html">History</a></li>
+                    <li><a href="places.php">Places</a></li>
+                    <li><a href="residents.php">Residents</a></li>
+                    <li><a href="history.php">History</a></li>
                 </ul>
             </div>
         </div>

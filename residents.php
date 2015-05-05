@@ -16,6 +16,9 @@
 </head>
 
 <body class="residents-bg">
+<?php
+	include "header.php";
+?>
 	<div class="residents-main">
 		<h2>Residents</h2>
 		<h3>South Park attracts a lot of startups and creative companies</h3>
@@ -40,7 +43,9 @@
 			<p>We created Dashlane because we are on a mission to fix the internet.</p>
 		</div>
 	</div>
-	
+<?php
+	include "footer.php";
+?>
 </body>
 
 </html>

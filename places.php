@@ -16,6 +16,9 @@
 </head>
 
 <body>
+<?php
+	include "header.php";
+?>
 	<!-- PLACES: Start -->
 <div class="places">
 	<h2>Places</h2>
@@ -63,6 +66,9 @@
 	</ul>
 </div>
 <!-- PLACES: End -->
+<?php
+	include "footer.php";
+?>
 </body>
 
 </html>
