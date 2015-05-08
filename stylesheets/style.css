@@ -451,10 +451,12 @@ footer {
     bottom: 0px;
     left: 0px; }
   .hero .hero-video-background {
+    display: none;
     position: absolute !important;
     top: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    z-index: -9999; }
 
 .places h2 {
   text-align: center;
