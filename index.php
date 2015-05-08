@@ -30,7 +30,7 @@
 	</ul>
 </div>
 <div class="hero-color-overlay">&nbsp;</div>
-<div class="hero-video-background" data-vide-bg="assets/south-park" data-vide-options="loop: true, muted: true, position: 0% 0%, posterType: jpg">&nbsp;</div>
+<div class="hero-video-background" data-vide-bg="assets/south-park" data-vide-options="loop: true, muted: true, position: 0% 0%, posterType: jpg" id="hero-video-background">&nbsp;</div>
 </div>
 <!-- HERO: End -->
 
@@ -133,4 +133,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.3.min.js"><\/script>')</script>
 	<script src="scripts/jquery.vide.min.js"></script>
+	<script>
+		$( window ).load(function() {
+			$('#hero-video-background').fadeIn(1500);
+		});
+	</script>
 </html>
