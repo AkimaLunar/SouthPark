@@ -3,32 +3,44 @@ footer {
 	$gradient-color-top:transparentize($accent2-color, .8);
 	$gradient-color-bottom:transparentize($accent1-color, .8);
 
-	height: 60px;
 	overlay: hidden;
 	@include linear-gradient($vertical-angle, $gradient-color-top, $gradient-color-bottom);
-
+	@include media(min-width $medium-screen) {
+		height: 60px;
+	}
 	.footer-inner {
 		@include outer-container;
 		padding-top: 14px;
 	}
 
 	.footer-first {
-		@include span-columns(6);
+		@include span-columns(12);
+		text-align: center;
 		a {
 			font-family: $header-font-family;
 			@include heading(em(22), transparentize($accent2-color, 0.6), 6px);
 			&:hover {
-				color: $accent2-color;
+				color: transparentize($accent2-color, 0.4);
 			}
+		}
+
+		@include media(min-width $medium-screen) {
+			@include span-columns(6);
+			text-align: left;
 		}
 	}
 
 	.footer-second {
-		@include span-columns(6);
-		text-align: right;
+		@include span-columns(12);
+		text-align: center;
 		p {
 			padding: 4px 0;
 			color: $accent2-color;
+		}
+
+		@include media(min-width $medium-screen) {
+			@include span-columns(6);
+			text-align: right;
 		}
 	}
 

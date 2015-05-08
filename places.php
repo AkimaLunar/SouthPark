@@ -24,8 +24,9 @@
 	<h2>Places</h2>
 	<h3>South Park is a home for many small cozy coffee shops, restaurants, shops and even a brewery! Explore all that this little park has to offer.</h3>
 	<div class="map">
-		<div class="map-inner">
+		<div class="map-inner" id="map-inner">
 			<!-- Map: START -->
+			<!-- <div class="map-overlay" onClick="style.pointerEvents='none'"></div> -->
 			<div class='embed-container'>
 				<iframe width='600' height='340' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/search?q=restaurants%20near%20South%20Park%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyD7HVGpXFtcXdfiGChTmDoJYdZ_pFYzGC8'></iframe>
 			</div>
@@ -69,6 +70,13 @@
 <?php
 	include "footer.php";
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.3.min.js"><\/script>')</script>
+<script>
+	$('#map-inner').click(function () {
+	    $('.embed-container iframe').css("pointer-events", "auto");
+	});
+</script>
 </body>
 
 </html>

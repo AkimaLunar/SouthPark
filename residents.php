@@ -24,15 +24,15 @@
 		<h3>South Park attracts a lot of startups and creative companies</h3>
 		<div class="residents-list">
 			<ul>
-				<li>Join.Me Button</li>
-				<li>CleAN</li>
-				<li>Dashline</li>
-				<li>Streamable</li>
-				<li>UXB</li>
-				<li>Highball</li>
-				<li>Something Good</li>
-				<li>Roboto</li>
-				<li>Taplet</li>
+				<li><a href="javascript:void(0)">Join.Me Button</li></a>
+				<li><a href="javascript:void(0)">CleAN</li></a>
+				<li><a href="javascript:void(0)">Dashline</li></a>
+				<li><a href="javascript:void(0)">Streamable</li></a>
+				<li><a href="javascript:void(0)">UXB</li></a>
+				<li><a href="javascript:void(0)">Highball</li></a>
+				<li><a href="javascript:void(0)">Something Good</li></a>
+				<li><a href="javascript:void(0)">Roboto</li></a>
+				<li><a href="javascript:void(0)">Taplet</li></a>
 			</ul>
 		</div>
 		<div class="residents-information">
@@ -46,6 +46,9 @@
 <?php
 	include "footer.php";
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.3.min.js"><\/script>')</script>
+
 </body>
 
 </html>

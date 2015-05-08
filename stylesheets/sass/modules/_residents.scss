@@ -2,8 +2,8 @@
 	$color-overlay-top: $accent2-color;
 	$color-overlay-bottom: $accent1-color;
 	$color-overlay-angle: 35deg;
-	$transparency-top: .9;
-	$transparency-bottom: .7;
+	$transparency-top: .95;
+	$transparency-bottom: .75;
 	@include linear-gradient($color-overlay-angle, transparentize($color-overlay-top, $transparency-top), transparentize($color-overlay-bottom, $transparency-bottom));
 	.residents-main {
 		@include outer-container;
@@ -29,6 +29,17 @@
 	.residents-list {
 		@include span-columns(3);
 		padding: 1.5em;
+		li {
+			padding-bottom: .4em;
+			a {
+				@include transition(all .2s ease-in-out);
+				position: relative;
+				top: 0;
+				&:hover {
+					font-size: 1.05em;
+				}
+			}
+		}
 	}
 	.residents-information {
 		@include span-columns(9);
