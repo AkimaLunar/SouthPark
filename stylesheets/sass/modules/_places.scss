@@ -31,8 +31,16 @@
 			background-position: center center;
 			margin-bottom: 2em;
 		}
+		
 	}
-
+	.map-overlay {
+		background:transparent; 
+		position:relative; 
+		width:100%;
+		height:100%;
+		top: 340px;
+		margin-top: -340px;
+	}
 	.map-inner {
 		@include outer-container;
 		height: 340px;
@@ -57,7 +65,7 @@
 	ul {
 		@include outer-container;
 		@include media(max-width $max-width, 6) {
-			padding: em(10);
+			padding: 14px;
 		}
 		li { 
 			@include span-columns(12);
@@ -93,4 +101,8 @@
 		text-transform: uppercase;
 		letter-spacing: 2px;
 	}
+}
+
+.embed-container iframe {
+	pointer-events: none;
 }

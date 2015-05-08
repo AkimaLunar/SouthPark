@@ -22,14 +22,21 @@
 		top: 50%;
 		transform: translateY(-50%);
 		color: transparentize(white, .3);
-		width: 570px;
 		margin: 0 auto;
 		text-align: center;
 
+		@include media(min-width $medium-screen) {
+			width: 570px;
+		}
+
 		h1 {
 			text-transform: uppercase;
-			letter-spacing: 30px;
-			font-size: em(46);
+			letter-spacing: 6px;
+			font-size: em(40);
+			@include media(min-width $medium-screen) {
+				letter-spacing: 30px;
+				font-size: em(46);
+			}
 		}
 		ul {
 			list-style: none;
