@@ -1,29 +1,29 @@
 <header>
 <div class="header-inner">
 	<div class="header-first">
-		<a class="logo" href="/">South Park</a>
+		<a class="logo" href="/{{ site.baseurl }}">South Park</a>
 	</div>
 	<div class="header-second">
 		<ul>
 			<li>
 				{% if page.active == "places" %}
-					<a href="/places" class="active">Places</a></li>
+					<a href="{{ site.baseurl }}/places" class="active">Places</a></li>
 				{% else %}
-					<a href="/places">Places</a>
+					<a href="{{ site.baseurl }}/places">Places</a>
 				{% endif %}
 			</li>
 			<li>
 				{% if page.active == "residents" %}
-					<a href="/residents" class="active">Residents</a>
+					<a href="{{ site.baseurl }}/residents" class="active">Residents</a>
 				{% else %}
-					<a href="/residents">Residents</a>
+					<a href="{{ site.baseurl }}/residents">Residents</a>
 				{% endif %}
 			</li>
 			<li>
 				{% if page.active == "history" %}
-					<a href="/history" class="active">History</a>
+					<a href="{{ site.baseurl }}/history" class="active">History</a>
 				{% else %}
-					<a href="/history">History</a>
+					<a href="{{ site.baseurl }}/history">History</a>
 				{% endif %}
 			</li>
 		</ul>
