@@ -46,8 +46,15 @@ footer {
 
 }
 
-.footer-fixed {
-	@include media(min-width $medium-screen min-height 816px) {
+.footer-fixed-history {
+	@include media(min-width $medium-screen min-height 794px) {
+		position: absolute;
+		bottom:0;
+	}
+}
+
+.footer-fixed-residents {
+	@include media(min-width $medium-screen min-height 720px) {
 		position: absolute;
 		bottom:0;
 	}

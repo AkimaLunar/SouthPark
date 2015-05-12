@@ -1,7 +1,7 @@
 {% if page.active == "residents" %}
-	<footer class="footer-fixed">
+	<footer class="footer-fixed-residents">
 {% elsif page.active == "history" %}
-	<footer class="footer-fixed">
+	<footer class="footer-fixed-history">
 {% else %}
 	<footer>
 {% endif %}
@@ -10,7 +10,7 @@
 			<a class="logo" href="/">South Park</a>
 		</div>
 		<div class="footer-second">
-			<p>&copy; 2015 Ria Carmin</p>
+			<p>&copy; {{ site.time | date: '%Y' }} Ria Carmin</p>
 		</div>
 	</div>
 </footer>
