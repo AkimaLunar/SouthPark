@@ -28,6 +28,7 @@
 				border-bottom: $base-border;
 				@include media(min-width $medium-screen) {
 					border-bottom: none;
+					margin: .5em 0;
 				}
 			}
 		}

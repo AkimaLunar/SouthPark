@@ -2,7 +2,7 @@ footer {
 	$vertical-angle: 12deg;
 	$gradient-color-top:transparentize($accent2-color, .8);
 	$gradient-color-bottom:transparentize($accent1-color, .8);
-	overlay: hidden;
+	overflow: hidden;
 	width: 100%;
 	@include linear-gradient($vertical-angle, $gradient-color-top, $gradient-color-bottom);
 	@include media(min-width $medium-screen) {
@@ -47,7 +47,7 @@ footer {
 }
 
 .footer-fixed {
-	@include media(min-width $medium-screen) {
+	@include media(min-width $medium-screen min-height 816px) {
 		position: absolute;
 		bottom:0;
 	}
