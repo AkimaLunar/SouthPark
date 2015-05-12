@@ -29,10 +29,25 @@
 		}
 	}
 	.residents-list {
-		@include span-columns(3);
+		@include span-columns(12);
+		@include media(min-width $medium-screen) {
+			@include span-columns(3);
+		}
 		padding: 1.5em;
 		li {
-			padding-bottom: .4em;
+			padding: 8px 14px;
+			margin: 0 4px 16px 4px;
+			display: inline-block;
+			border: 1px solid $base-link-color;
+			border-radius: 4px;
+			@include media(min-width $medium-screen) {
+				padding: 0;
+				padding-bottom: .4em;
+				margin-bottom: 0px;
+				display: block;
+				border: none;
+				border-radius: 0;
+			}
 			a {
 				font-size: 1.2em;
 			}
@@ -47,11 +62,15 @@
 		}
 	}
 	.residents-information {
-		@include span-columns(9);
+		@include span-columns(12);
 		@include omega;
-		min-height: 400px;
-		padding: 3em;
+		padding: 2em;
 		background: white;
+		@include media(min-width $medium-screen) {
+			@include span-columns(9);
+			min-height: 400px;
+			padding: 3em;
+		}
 	}
 
 	.residents-content {
